@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Services</title>
+</head>
+<body>
+    <h2>A-Z Household Services</h2>
+    <a href="/professional_register">Register as Professional</a>
+    <form method="POST" action="{{ url_for('authentication.login') }}">
+        <label for="username">Registered Email ID:
+            <input type="email" placeholder="Enter your email">
+        </label><br>
+        <label for="password">Password:
+            <input type="password" placeholder="Password">
+        </label>
+        <button>Login</button>
+    </form>
+    <p>
+        
+    </p>
+    <a href="/cust-signup">Create Account</a>
+    {% with messages=get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div>
+                {{message}}
+                <button type="button" class=""></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+</body>
+</html>

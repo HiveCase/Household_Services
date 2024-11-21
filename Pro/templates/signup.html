@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup</title>
+    <style>
+        .flash-popup{
+            position:fixed;
+            top:20px;
+            right:20px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+        }
+        #pdf-upload{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h3>Customer Signup</h3>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="name">Full Name:
+            <input type="text" id="name" name="name" placeholder="Name">
+        </label><br>
+        <label for="username">Email ID:
+            <input type="text" id="username" name="username" placeholder="Username">
+        </label><br>
+        <label for="password">Password:
+            <input type="password" id="password" name="password" placeholder="Password">
+        </label><br>
+        <label for="address">Address:
+          <textarea id="address" name="address" rows="3" cols="30" required></textarea><br>
+        </label><br>
+        <label for="pincode">Pincode:
+          <input type="text" id="pincode" name="pincode" pattern="\d{4,6}" placeholder="Enter Area Code">
+        </label><br>
+        <button>Signup</button>          
+    </form><br>
+    <a href="login">Already Registered!</a>
+</body>
+</html>

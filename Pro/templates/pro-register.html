@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffessional Register</title>
+</head>
+<body>
+  <h2>Service Professional Signup</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <label for="email">Email ID (Username):
+        <input type="email" id="email">
+      </label><br>
+      <label for="password">Password:
+        <input type="password" id="password">
+      </label><br>
+      <label for="name">Full Name:
+        <input type="text" id="name">
+      </label><br>
+      <label for="service">Service Name:
+        <select id="service">
+          <option>Plumbing</option>
+          <option>Electrical</option>
+          <option>Cleaning</option>
+          <option>Others</option>
+        </select>
+      </label><br>
+      <label for="experience">Experience (in Years):
+        <input type="number" id="experience">
+      </label><br>
+      <label for="doc">Attach Documents
+        <input type="file" accept=".pdf" id="doc">
+      </label><br>
+      <label for="address">Address:
+        <textarea id="address" name="address" rows="3" cols="30" required></textarea>
+      </label><br>
+      <label for="pincode">Pincode :
+        <input type="text" pattern="\d{4,6}" id="pincode">
+      </label><br> 
+      <button>Register</button><br>  
+    </form><br>
+    <br><a href="/login">Login Here</a>
+</body>
+</html>
